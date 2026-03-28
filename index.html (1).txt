@@ -1,0 +1,1374 @@
+<html lang="zh"><head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+        html,body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          /* 移除 height: 100% 限制，允许内容自然扩展 */
+          min-height: 100%;
+          /* 确保内容不被截断 */
+          overflow: visible;
+        }
+        /* 确保外层 body 不会限制内层内容 */
+        body {
+          position: relative;
+        }
+        * {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+        *::-webkit-scrollbar {
+          display: none;
+        }
+      </style>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.bottom-4{bottom:1rem}.right-4{right:1rem}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-6{margin-top:1.5rem}.mt-1{margin-top:0.25rem}.mb-1{margin-bottom:0.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-3{height:0.75rem}.h-full{height:100%}.max-h-80{max-height:20rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.min-w-\[200px\]{min-width:200px}.min-w-0{min-width:0px}.min-w-\[140px\]{min-width:140px}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-xl{border-radius:0.75rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l-2{border-left-width:2px}.border-green-500\/30{border-color:rgb(34 197 94 / 0.3)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-l-purple-500{--tw-border-opacity:1;border-left-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.bg-black\/20{background-color:rgb(0 0 0 / 0.2)}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-blue-500\/20{background-color:rgb(59 130 246 / 0.2)}.bg-orange-500\/20{background-color:rgb(249 115 22 / 0.2)}.bg-purple-500\/20{background-color:rgb(168 85 247 / 0.2)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-green-500{--tw-gradient-from:#22c55e var(--tw-gradient-from-position);--tw-gradient-to:rgb(34 197 94 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-400{--tw-gradient-from:#c084fc var(--tw-gradient-from-position);--tw-gradient-to:rgb(192 132 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-500{--tw-gradient-from:#6366f1 var(--tw-gradient-from-position);--tw-gradient-to:rgb(99 102 241 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-pink-500{--tw-gradient-from:#ec4899 var(--tw-gradient-from-position);--tw-gradient-to:rgb(236 72 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-orange-500{--tw-gradient-from:#f97316 var(--tw-gradient-from-position);--tw-gradient-to:rgb(249 115 22 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-red-500{--tw-gradient-from:#ef4444 var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 68 68 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-yellow-500{--tw-gradient-from:#eab308 var(--tw-gradient-from-position);--tw-gradient-to:rgb(234 179 8 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-400{--tw-gradient-to:#60a5fa var(--tw-gradient-to-position)}.to-blue-500{--tw-gradient-to:#3b82f6 var(--tw-gradient-to-position)}.to-emerald-500{--tw-gradient-to:#10b981 var(--tw-gradient-to-position)}.to-cyan-500{--tw-gradient-to:#06b6d4 var(--tw-gradient-to-position)}.to-purple-500{--tw-gradient-to:#a855f7 var(--tw-gradient-to-position)}.to-rose-500{--tw-gradient-to:#f43f5e var(--tw-gradient-to-position)}.to-amber-500{--tw-gradient-to:#f59e0b var(--tw-gradient-to-position)}.to-orange-500{--tw-gradient-to:#f97316 var(--tw-gradient-to-position)}.to-pink-500{--tw-gradient-to:#ec4899 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-3{padding:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.pb-4{padding-bottom:1rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-70{opacity:0.7}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-green-500\/20{--tw-shadow-color:rgb(34 197 94 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-purple-500\/30{--tw-shadow-color:rgb(168 85 247 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+  <body>
+      <script nonce="">
+        window.onerror = function(e) {
+          // 检查是否有DOM被渲染（排除script标签）
+          const hasDom = function() {
+            // 检查body是否有子元素（排除script标签）
+            const children = Array.from(document.body.children || []);
+            const nonScriptChildren = children.filter(child => child.tagName !== 'SCRIPT');
+            if (nonScriptChildren.length > 0) {
+              return true;
+            }
+            // 检查是否有文本内容（排除空白）
+            const textContent = document.body.textContent || '';
+            const hasText = textContent.trim().length > 0;
+            // 检查是否有可见元素（通过计算样式）
+            const allElements = document.body.querySelectorAll('*');
+            for (let i = 0; i < allElements.length; i++) {
+              const el = allElements[i];
+              if (el.tagName === 'SCRIPT' || el.tagName === 'STYLE') continue;
+              const style = window.getComputedStyle(el);
+              if (style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0') {
+                return true;
+              }
+            }
+            return hasText;
+          };
+          
+          // 如果页面已经渲染出DOM，则不发送错误信息
+          if (!hasDom()) {
+            window.parent.postMessage({
+              type: 'error',
+              error: e
+            }, '*')
+          }
+        }
+        window.alert = (s) => console.log(s);
+        window.confirm = (s) => console.log(s);
+        console.log('window html', window.innerHeight, Date.now())
+        
+        function handleOnload() {
+          console.log('window.onload 触发', window.innerHeight, Date.now());
+          // 检查是否有defer脚本
+          const hasDeferScripts = document.querySelectorAll('script[defer]').length > 0;
+
+          console.log('hasDeferScripts33', hasDeferScripts);
+          
+          if (hasDeferScripts) {
+            // 如果有defer脚本，等待它们执行完成
+            console.log('hasDeferScripts11', hasDeferScripts);
+            setTimeout(function() {
+              window.parent.postMessage({
+                type: 'onload',
+              }, '*');
+            }, 1000);
+          } else {
+            console.log('hasDeferScripts22', hasDeferScripts);
+            // 没有defer脚本，直接发送
+            window.parent.postMessage({
+              type: 'onload',
+            }, '*');
+          }
+        }
+        
+        // 检查文档是否已经加载完成
+        console.log('document.readyState:', document.readyState, 'Date.now():', Date.now());
+        
+        // 立即检查，如果已经加载完成则立即执行
+        if (document.readyState === 'complete') {
+          console.log('document already loaded, executing immediately');
+          handleOnload();
+        } else {
+          // 否则等待 window.onload 事件
+          console.log('waiting for window.onload, current readyState:', document.readyState);
+          // 同时监听 load 事件（更可靠）
+          window.addEventListener('load', handleOnload);
+          // 也设置 window.onload 作为备用（兼容性）
+          if (!window.onload) {
+            window.onload = handleOnload;
+          } else {
+            // 如果已经有 onload，合并执行
+            const oldOnload = window.onload;
+            window.onload = function() {
+              if (oldOnload) oldOnload();
+              handleOnload();
+            };
+          }
+        }
+      </script>
+      
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Auto - YouTube Automation Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <script nonce="" src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #8b5cf6;
+            --secondary: #6366f1;
+            --accent: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 25%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .bg-blob:nth-child(1) {
+            width: 400px;
+            height: 400px;
+            background: var(--primary);
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .bg-blob:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            background: var(--secondary);
+            top: 50%;
+            right: -50px;
+            animation-delay: -5s;
+        }
+
+        .bg-blob:nth-child(3) {
+            width: 350px;
+            height: 350px;
+            background: var(--accent);
+            bottom: -100px;
+            left: 30%;
+            animation-delay: -10s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(30px, -30px) scale(1.1); }
+            50% { transform: translate(-20px, 20px) scale(0.9); }
+            75% { transform: translate(20px, 30px) scale(1.05); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(139, 92, 246, 0.4);
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
+        }
+
+        .liquid-icon {
+            animation: liquidBounce 2s ease-in-out infinite;
+            filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
+        }
+
+        @keyframes liquidBounce {
+            0%, 100% { 
+                transform: translateY(0) scale(1);
+                filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
+            }
+            25% { 
+                transform: translateY(-8px) scale(1.05);
+                filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.7));
+            }
+            50% { 
+                transform: translateY(0) scale(1);
+                filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
+            }
+            75% { 
+                transform: translateY(-4px) scale(1.02);
+                filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.6));
+            }
+        }
+
+        .btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(139, 92, 246, 0.6);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, var(--accent) 0%, #16a34a 100%);
+            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.4);
+            color: white;
+        }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(34, 197, 94, 0.6);
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .status-active { 
+            background: var(--accent);
+            box-shadow: 0 0 15px var(--accent);
+        }
+
+        .status-inactive { 
+            background: #6b7280;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.2); }
+        }
+
+        .progress-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            background-size: 200% 100%;
+            animation: shimmer 2s linear infinite;
+            border-radius: 10px;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .topic-card {
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .topic-card.selected {
+            border-color: var(--accent);
+            box-shadow: 0 0 30px rgba(34, 197, 94, 0.4);
+        }
+
+        .toast {
+            animation: slideInRight 0.3s ease, fadeOut 0.3s ease 2.7s;
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        .modal {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-content {
+            animation: modalSlide 0.3s ease;
+        }
+
+        @keyframes modalSlide {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .select-option {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .select-option:hover {
+            transform: scale(1.05);
+        }
+
+        .select-option.selected {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+        }
+
+        .header-glow {
+            position: relative;
+        }
+
+        .header-glow::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary), var(--secondary), var(--primary), transparent);
+            animation: glowMove 3s ease-in-out infinite;
+        }
+
+        @keyframes glowMove {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .glass-card {
+                border-radius: 16px;
+            }
+            
+            .grid-cols-2, .grid-cols-3, .grid-cols-4, .grid-cols-5 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+
+
+    <div class="bg-animation">
+        <div class="bg-blob"></div>
+        <div class="bg-blob"></div>
+        <div class="bg-blob"></div>
+    </div>
+
+    <header class="header-glow sticky top-0 z-50 border-b border-white/10 backdrop-blur-xl bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between flex-wrap gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center liquid-icon shadow-lg shadow-purple-500/30">
+                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">YT Auto</h1>
+                        <p class="text-sm text-gray-400">Workflow: <span class="text-purple-400 font-mono">MBkaeX</span></p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 px-4 py-2 rounded-xl glass-card">
+                        <span class="status-dot status-inactive" id="workflowStatus"></span>
+                        <span class="text-sm" id="statusText">Stopped</span>
+                    </div>
+                    <button id="toggleWorkflow" class="btn btn-primary px-6 py-2 rounded-xl font-medium">Start Automation</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="glass-card p-6 mb-8 border-2 border-green-500/30 shadow-lg shadow-green-500/20">
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center liquid-icon flex-shrink-0">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-xl font-bold mb-2">✅ Download &amp; Share</h2>
+                    <p class="text-gray-400 text-sm mb-4">HTML file save karne ke liye koi bhi method use karein:</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <button onclick="downloadHTML()" class="btn btn-success px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-3 hover:scale-105 w-full">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+                            </svg>
+                            <div class="text-left">
+                                <p>Download HTML</p>
+                                <p class="text-xs opacity-70">Direct Save</p>
+                            </div>
+                        </button>
+                        
+                        <button onclick="copyFullCode()" class="btn px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 hover:scale-105 w-full">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path>
+                            </svg>
+                            <div class="text-left">
+                                <p>Copy All Code</p>
+                                <p class="text-xs opacity-70">Paste in Notepad</p>
+                            </div>
+                        </button>
+                        
+                        <button onclick="saveAsFile()" class="btn px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 hover:scale-105 w-full">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"></path>
+                            </svg>
+                            <div class="text-left">
+                                <p>Save As (Ctrl+S)</p>
+                                <p class="text-xs opacity-70">Browser Save</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card p-6 mb-8">
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center liquid-icon flex-shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                    </svg>
+                </div>
+                Quality &amp; FPS Settings
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-medium mb-3 text-gray-300">Resolution</h3>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="select-option glass-card p-4 text-center cursor-pointer" onclick="selectQuality('720p', this)">
+                            <p class="font-bold text-lg">720p</p>
+                            <p class="text-xs text-gray-400">HD</p>
+                        </div>
+                        <div class="select-option glass-card p-4 text-center cursor-pointer" onclick="selectQuality('1080p', this)">
+                            <p class="font-bold text-lg">1080p</p>
+                            <p class="text-xs text-gray-400">Full HD</p>
+                        </div>
+                        <div class="select-option glass-card p-4 text-center cursor-pointer selected" onclick="selectQuality('4K', this)">
+                            <p class="font-bold text-lg">4K</p>
+                            <p class="text-xs text-gray-400">Ultra HD</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-medium mb-3 text-gray-300">Frame Rate</h3>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="select-option glass-card p-4 text-center cursor-pointer" onclick="selectFPS('24', this)">
+                            <p class="font-bold text-lg">24</p>
+                            <p class="text-xs text-gray-400">Cinema</p>
+                        </div>
+                        <div class="select-option glass-card p-4 text-center cursor-pointer selected" onclick="selectFPS('30', this)">
+                            <p class="font-bold text-lg">30</p>
+                            <p class="text-xs text-gray-400">Standard</p>
+                        </div>
+                        <div class="select-option glass-card p-4 text-center cursor-pointer" onclick="selectFPS('60', this)">
+                            <p class="font-bold text-lg">60</p>
+                            <p class="text-xs text-gray-400">Smooth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <div>
+                    <label class="text-xs text-gray-400 mb-2 block">Duration</label>
+                    <select id="videoDuration" onchange="updateBadges()" class="w-full px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10">
+                        <option value="15">15s</option>
+                        <option value="20" selected="">20s</option>
+                        <option value="25">25s</option>
+                        <option value="30">30s</option>
+                        <option value="60">60s</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-xs text-gray-400 mb-2 block">Voice</label>
+                    <select id="voiceType" class="w-full px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10">
+                        <option value="hindi-male">Hindi Male</option>
+                        <option value="hindi-female">Hindi Female</option>
+                        <option value="hinglish-male">Hinglish Male</option>
+                        <option value="hinglish-female" selected="">Hinglish Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-xs text-gray-400 mb-2 block">Animation</label>
+                    <select id="animationStyle" class="w-full px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10">
+                        <option value="3d-cartoon" selected="">3D Cartoon</option>
+                        <option value="2d-anime">2D Anime</option>
+                        <option value="realistic">Realistic</option>
+                        <option value="claymation">Claymation</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-xs text-gray-400 mb-2 block">Upload</label>
+                    <select id="uploadQuality" class="w-full px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10">
+                        <option value="standard">Standard</option>
+                        <option value="high" selected="">High</option>
+                        <option value="maximum">Maximum</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mt-6 flex items-center gap-3 flex-wrap">
+                <span class="text-sm text-gray-400">Active:</span>
+                <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-medium" id="qualityBadge">4K</span>
+                <span class="px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-sm font-medium" id="fpsBadge">30 FPS</span>
+                <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-medium" id="durationBadge">20s</span>
+            </div>
+        </div>
+
+        <div class="glass-card p-6 mb-8">
+            <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center liquid-icon flex-shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                    </svg>
+                </div>
+                Select Topic
+            </h2>
+            <p class="text-gray-400 mb-6 text-sm">Apna topic choose karein ya custom topic add karein</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6" id="topicGrid">
+                <div class="topic-card glass-card p-4 " onclick="selectTopic(1)">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl liquid-icon">📱</div>
+                        <div class="flex-1">
+                            <h3 class="font-medium">Jethalal ka Smartphone</h3>
+                            <span class="text-xs text-gray-400">Comedy</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300">Jab Jethalal ko mila naya smartphone</p>
+                    
+                </div>
+            
+                <div class="topic-card glass-card p-4 " onclick="selectTopic(2)">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl liquid-icon">🚗</div>
+                        <div class="flex-1">
+                            <h3 class="font-medium">Halku-ray Flying Car</h3>
+                            <span class="text-xs text-gray-400">Sci-Fi</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300">Halku-ray ne banayi uadne wali car</p>
+                    
+                </div>
+            
+                <div class="topic-card glass-card p-4 " onclick="selectTopic(3)">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl liquid-icon">🎒</div>
+                        <div class="flex-1">
+                            <h3 class="font-medium">Tapu School Masti</h3>
+                            <span class="text-xs text-gray-400">Kids</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300">Tapu ne school mein ki shararat</p>
+                    
+                </div>
+            
+                <div class="topic-card glass-card p-4 " onclick="selectTopic(4)">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl liquid-icon">💪</div>
+                        <div class="flex-1">
+                            <h3 class="font-medium">Bhide Gym</h3>
+                            <span class="text-xs text-gray-400">Fitness</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300">Bhide gaya gym</p>
+                    
+                </div>
+            
+                <div class="topic-card glass-card p-4 " onclick="selectTopic(5)">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl liquid-icon">💍</div>
+                        <div class="flex-1">
+                            <h3 class="font-medium">Popatlal Shaadi</h3>
+                            <span class="text-xs text-gray-400">Romance</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300">Popatlal dhoondh raha hai dulhan</p>
+                    
+                </div>
+            
+                <div class="topic-card glass-card p-4 " onclick="selectTopic(6)">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl liquid-icon">🎩</div>
+                        <div class="flex-1">
+                            <h3 class="font-medium">Dr. Hathi Magic</h3>
+                            <span class="text-xs text-gray-400">Magic</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300">Dr. Hathi ka magic show</p>
+                    
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-6">
+                <h3 class="font-medium mb-3">Custom Topic:</h3>
+                <div class="flex gap-3 flex-wrap">
+                    <input type="text" id="customTopicInput" placeholder="Example: Jab Jethalal ko mila naya smartphone..." class="flex-1 min-w-[200px] px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10">
+                    <button onclick="addCustomTopic()" class="btn btn-primary px-6 py-3 rounded-xl font-medium flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+                        </svg>
+                        Add
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="glass-card p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-gray-400 text-sm">Total Videos</span>
+                    <svg class="w-5 h-5 text-purple-400" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                    </svg>
+                </div>
+                <p class="text-3xl font-bold" id="totalVideos">24</p>
+                <p class="text-sm text-green-400 mt-1">+3 this week</p>
+            </div>
+            
+            <div class="glass-card p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-gray-400 text-sm">Total Views</span>
+                    <svg class="w-5 h-5 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path>
+                    </svg>
+                </div>
+                <p class="text-3xl font-bold" id="totalViews">1.2M</p>
+                <p class="text-sm text-green-400 mt-1">+15% this month</p>
+            </div>
+            
+            <div class="glass-card p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-gray-400 text-sm">Success Rate</span>
+                    <svg class="w-5 h-5 text-green-400" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                </div>
+                <p class="text-3xl font-bold" id="successRate">98%</p>
+                <p class="text-sm text-gray-400 mt-1">Last 30 days</p>
+            </div>
+            
+            <div class="glass-card p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-gray-400 text-sm">Next Run</span>
+                    <svg class="w-5 h-5 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
+                    </svg>
+                </div>
+                <p class="text-3xl font-bold" id="nextRun">09:00 AM</p>
+                <p class="text-sm text-gray-400 mt-1">Daily schedule</p>
+            </div>
+        </div>
+
+        <div class="glass-card p-6 mb-8">
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center liquid-icon flex-shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 17h18v-2H3v2zm0 3h18v-1H3v1zm0-7h18v-3H3v3zm0-9v4h18V4H3z"></path>
+                    </svg>
+                </div>
+                Workflow Nodes
+            </h2>
+            
+            <div class="flex items-center gap-2 overflow-x-auto pb-4 flex-wrap" id="workflowNodes">
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: 0s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center text-lg">⏰</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">Schedule (9 AM)</p>
+                            <p class="text-xs text-gray-400">scheduleTrigger</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#1</span>
+                    </div>
+                </div>
+            
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: 0.15s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-lg">🤖</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">OpenAI Script</p>
+                            <p class="text-xs text-gray-400">openAi</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#2</span>
+                    </div>
+                </div>
+            
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: 0.3s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-lg">🎙️</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">ElevenLabs</p>
+                            <p class="text-xs text-gray-400">elevenLabs</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#3</span>
+                    </div>
+                </div>
+            
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: 0.44999999999999996s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-lg">🎬</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">Runway Video</p>
+                            <p class="text-xs text-gray-400">runway</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#4</span>
+                    </div>
+                </div>
+            
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: 0.6s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center text-lg">💻</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">Python Code</p>
+                            <p class="text-xs text-gray-400">code</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#5</span>
+                    </div>
+                </div>
+            
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: 0.75s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-red-500 to-rose-500 flex items-center justify-center text-lg">📺</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">YouTube</p>
+                            <p class="text-xs text-gray-400">youtube</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#6</span>
+                    </div>
+                </div>
+            
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: 0.8999999999999999s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-lg">📧</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">Gmail</p>
+                            <p class="text-xs text-gray-400">gmail</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#7</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm text-gray-400">Progress</span>
+                    <span class="text-sm text-purple-400" id="progressText">0%</span>
+                </div>
+                <div class="progress-container h-3">
+                    <div class="progress-bar h-full" id="progressBar" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div class="glass-card p-6">
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center liquid-icon flex-shrink-0">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path>
+                        </svg>
+                    </div>
+                    Recent Activity
+                </h2>
+                <div class="space-y-3 max-h-80 overflow-y-auto" id="executionLog">
+                <div class="glass-card p-3 border-l-2 border-l-purple-500">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-sm font-medium">Workflow executed</span>
+                        <span class="text-xs text-gray-400">09:00 AM</span>
+                    </div>
+                    <span class="text-xs text-gray-400">All Nodes</span>
+                </div>
+            
+                <div class="glass-card p-3 border-l-2 border-l-purple-500">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-sm font-medium">Video uploaded</span>
+                        <span class="text-xs text-gray-400">Yesterday</span>
+                    </div>
+                    <span class="text-xs text-gray-400">YouTube</span>
+                </div>
+            
+                <div class="glass-card p-3 border-l-2 border-l-purple-500">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-sm font-medium">Video generated</span>
+                        <span class="text-xs text-gray-400">Yesterday</span>
+                    </div>
+                    <span class="text-xs text-gray-400">Runway</span>
+                </div>
+            
+                <div class="glass-card p-3 border-l-2 border-l-purple-500">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-sm font-medium">Voice created</span>
+                        <span class="text-xs text-gray-400">2 days ago</span>
+                    </div>
+                    <span class="text-xs text-gray-400">ElevenLabs</span>
+                </div>
+            
+                <div class="glass-card p-3 border-l-2 border-l-purple-500">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-sm font-medium">Script written</span>
+                        <span class="text-xs text-gray-400">2 days ago</span>
+                    </div>
+                    <span class="text-xs text-gray-400">OpenAI</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="glass-card p-6">
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center liquid-icon flex-shrink-0">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                        </svg>
+                    </div>
+                    Topic Details
+                </h2>
+                <div id="topicDetails"><div class="text-center py-8 text-gray-400"><p>Select a topic to see details</p></div></div>
+            </div>
+        </div>
+
+        <div class="glass-card p-6">
+            <h2 class="text-xl font-bold mb-4">Quick Actions</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <button onclick="runNow()" class="btn btn-primary px-4 py-4 rounded-xl font-medium flex flex-col items-center gap-2">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                    <span>Run Now</span>
+                </button>
+                <button onclick="copyShareLink()" class="btn px-4 py-4 rounded-xl font-medium flex flex-col items-center gap-2 bg-white/10 hover:bg-white/20">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path>
+                    </svg>
+                    <span>Copy Link</span>
+                </button>
+                <button onclick="downloadHTML()" class="btn px-4 py-4 rounded-xl font-medium flex flex-col items-center gap-2 bg-white/10 hover:bg-white/20">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+                    </svg>
+                    <span>Download</span>
+                </button>
+                <button onclick="exportWorkflow()" class="btn px-4 py-4 rounded-xl font-medium flex flex-col items-center gap-2 bg-white/10 hover:bg-white/20">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+                    </svg>
+                    <span>Export</span>
+                </button>
+                <button onclick="openSettings()" class="btn px-4 py-4 rounded-xl font-medium flex flex-col items-center gap-2 bg-white/10 hover:bg-white/20">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                    </svg>
+                    <span>Settings</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div id="settingsModal" class="modal fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <div class="modal-content glass-card p-6 w-full max-w-lg">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-xl font-bold">Settings</h2>
+                <button onclick="closeSettings()" class="text-gray-400 hover:text-white">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <label class="text-sm text-gray-400 mb-2 block">Schedule</label>
+                    <input type="text" value="0 9 * * *" class="w-full px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10" id="cronInput">
+                </div>
+                <div>
+                    <label class="text-sm text-gray-400 mb-2 block">Email</label>
+                    <input type="email" value="admin@example.com" class="w-full px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10">
+                </div>
+                <div>
+                    <label class="text-sm text-gray-400 mb-2 block">YouTube Channel</label>
+                    <input type="text" value="My Viral Channel" class="w-full px-4 py-3 rounded-xl glass-card bg-white/5 border border-white/10">
+                </div>
+            </div>
+            <div class="flex gap-4 mt-6">
+                <button onclick="saveSettings()" class="btn btn-primary px-6 py-3 rounded-xl font-medium flex-1">Save</button>
+                <button onclick="closeSettings()" class="btn px-6 py-3 rounded-xl font-medium flex-1 bg-white/10 hover:bg-white/20">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script nonce="">
+        const workflowData = {
+            name: "My Workflow 5",
+            id: "MBkaeX-EsuG6XFMUbg7HP",
+            shortId: "MBkaeX",
+            nodes: [
+                { id: "ff929642", name: "Schedule (9 AM)", type: "scheduleTrigger", icon: "⏰", color: "from-yellow-500 to-orange-500" },
+                { id: "5f4dc562", name: "OpenAI Script", type: "openAi", icon: "🤖", color: "from-green-500 to-emerald-500" },
+                { id: "e8af8b11", name: "ElevenLabs", type: "elevenLabs", icon: "🎙️", color: "from-blue-500 to-cyan-500" },
+                { id: "3c3e1aa7", name: "Runway Video", type: "runway", icon: "🎬", color: "from-purple-500 to-pink-500" },
+                { id: "26382b4f", name: "Python Code", type: "code", icon: "💻", color: "from-indigo-500 to-blue-500" },
+                { id: "478f5806", name: "YouTube", type: "youtube", icon: "📺", color: "from-red-500 to-rose-500" },
+                { id: "9c34e397", name: "Gmail", type: "gmail", icon: "📧", color: "from-orange-500 to-amber-500" }
+            ]
+        };
+
+        const predefinedTopics = [
+            { id: 1, title: "Jethalal ka Smartphone", description: "Jab Jethalal ko mila naya smartphone", icon: "📱", category: "Comedy" },
+            { id: 2, title: "Halku-ray Flying Car", description: "Halku-ray ne banayi uadne wali car", icon: "🚗", category: "Sci-Fi" },
+            { id: 3, title: "Tapu School Masti", description: "Tapu ne school mein ki shararat", icon: "🎒", category: "Kids" },
+            { id: 4, title: "Bhide Gym", description: "Bhide gaya gym", icon: "💪", category: "Fitness" },
+            { id: 5, title: "Popatlal Shaadi", description: "Popatlal dhoondh raha hai dulhan", icon: "💍", category: "Romance" },
+            { id: 6, title: "Dr. Hathi Magic", description: "Dr. Hathi ka magic show", icon: "🎩", category: "Magic" }
+        ];
+
+        let selectedTopic = null;
+        let customTopics = [];
+        let isRunning = true;
+        let executionCount = 0;
+        let selectedQuality = '1080p';
+        let selectedFPS = '30';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            renderWorkflowNodes();
+            renderExecutionLog();
+            renderTopicGrid();
+            updateTopicDetails();
+            updateBadges();
+        });
+
+        function renderTopicGrid() {
+            const container = document.getElementById('topicGrid');
+            if (!container) return;
+            const allTopics = [...predefinedTopics, ...customTopics];
+            container.innerHTML = allTopics.map(topic => `
+                <div class="topic-card glass-card p-4 ${selectedTopic?.id === topic.id ? 'selected' : ''}" onclick="selectTopic(${topic.id})">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl liquid-icon">${topic.icon}</div>
+                        <div class="flex-1">
+                            <h3 class="font-medium">${topic.title}</h3>
+                            <span class="text-xs text-gray-400">${topic.category}</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300">${topic.description}</p>
+                    ${selectedTopic?.id === topic.id ? '<div class="mt-3 flex items-center gap-2 text-green-400 text-sm"><span class="status-dot status-active"></span>Selected</div>' : ''}
+                </div>
+            `).join('');
+        }
+
+        function selectTopic(topicId) {
+            const allTopics = [...predefinedTopics, ...customTopics];
+            selectedTopic = allTopics.find(t => t.id === topicId);
+            renderTopicGrid();
+            updateTopicDetails();
+            showToast(`Topic selected: ${selectedTopic.title}`, 'success');
+        }
+
+        function addCustomTopic() {
+            const input = document.getElementById('customTopicInput');
+            const topicText = input?.value.trim();
+            if (!topicText) { showToast('Please enter a topic!', 'warning'); return; }
+            const icons = ['🎬', '🎭', '🎪', '🎨', '🎯', '🎲', '🎸', '🎺'];
+            const categories = ['Comedy', 'Drama', 'Action', 'Romance', 'Thriller', 'Kids', 'Education', 'Entertainment'];
+            customTopics.push({
+                id: Date.now(),
+                title: topicText.substring(0, 40),
+                description: topicText,
+                icon: icons[Math.floor(Math.random() * icons.length)],
+                category: categories[Math.floor(Math.random() * categories.length)]
+            });
+            if (input) input.value = '';
+            renderTopicGrid();
+            showToast('Custom topic added!', 'success');
+        }
+
+        function updateTopicDetails() {
+            const container = document.getElementById('topicDetails');
+            if (!container) return;
+            if (!selectedTopic) {
+                container.innerHTML = '<div class="text-center py-8 text-gray-400"><p>Select a topic to see details</p></div>';
+                return;
+            }
+            const duration = document.getElementById('videoDuration')?.value || '20';
+            container.innerHTML = `
+                <div class="glass-card p-4 border border-green-500/30">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-3xl liquid-icon">${selectedTopic.icon}</div>
+                        <div>
+                            <h3 class="text-xl font-bold">${selectedTopic.title}</h3>
+                            <span class="text-sm text-purple-400">${selectedTopic.category}</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <p class="text-sm text-gray-300">${selectedTopic.description}</p>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm">${selectedQuality}</span>
+                            <span class="px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-sm">${selectedFPS} FPS</span>
+                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm">${duration}s</span>
+                        </div>
+                    </div>
+                    <button onclick="runWithTopic()" class="btn btn-primary w-full mt-4 py-3 rounded-xl font-medium flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Generate Video
+                    </button>
+                </div>
+            `;
+        }
+
+        function renderWorkflowNodes() {
+            const container = document.getElementById('workflowNodes');
+            if (!container) return;
+            container.innerHTML = workflowData.nodes.map((node, index) => `
+                <div class="glass-card p-3 min-w-[140px] flex-shrink-0 liquid-icon" style="animation-delay: ${index * 0.15}s">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br ${node.color} flex items-center justify-center text-lg">${node.icon}</div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-medium text-sm truncate">${node.name}</p>
+                            <p class="text-xs text-gray-400">${node.type}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="status-dot status-active"></span>
+                        <span class="text-xs text-gray-400">#${index + 1}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderExecutionLog() {
+            const container = document.getElementById('executionLog');
+            if (!container) return;
+            const logs = [
+                { time: '09:00 AM', message: 'Workflow executed', node: 'All Nodes' },
+                { time: 'Yesterday', message: 'Video uploaded', node: 'YouTube' },
+                { time: 'Yesterday', message: 'Video generated', node: 'Runway' },
+                { time: '2 days ago', message: 'Voice created', node: 'ElevenLabs' },
+                { time: '2 days ago', message: 'Script written', node: 'OpenAI' }
+            ];
+            container.innerHTML = logs.map(log => `
+                <div class="glass-card p-3 border-l-2 border-l-purple-500">
+                    <div class="flex items-center justify-between mb-1">
+                        <span class="text-sm font-medium">${log.message}</span>
+                        <span class="text-xs text-gray-400">${log.time}</span>
+                    </div>
+                    <span class="text-xs text-gray-400">${log.node}</span>
+                </div>
+            `).join('');
+        }
+
+        function selectQuality(quality, element) {
+            selectedQuality = quality;
+            if (element && element.parentElement) {
+                element.parentElement.querySelectorAll('.select-option').forEach(el => el.classList.remove('selected'));
+                element.classList.add('selected');
+            }
+            updateBadges();
+            updateTopicDetails();
+            showToast(`Quality: ${quality}`, 'success');
+        }
+
+        function selectFPS(fps, element) {
+            selectedFPS = fps;
+            if (element && element.parentElement) {
+                element.parentElement.querySelectorAll('.select-option').forEach(el => el.classList.remove('selected'));
+                element.classList.add('selected');
+            }
+            updateBadges();
+            updateTopicDetails();
+            showToast(`FPS: ${fps}`, 'success');
+        }
+
+        function updateBadges() {
+            const qualityBadge = document.getElementById('qualityBadge');
+            const fpsBadge = document.getElementById('fpsBadge');
+            const durationBadge = document.getElementById('durationBadge');
+            const durationSelect = document.getElementById('videoDuration');
+            if (qualityBadge) qualityBadge.textContent = selectedQuality;
+            if (fpsBadge) fpsBadge.textContent = selectedFPS + ' FPS';
+            if (durationBadge && durationSelect) durationBadge.textContent = durationSelect.value + 's';
+        }
+
+        function downloadHTML() {
+            try {
+                const htmlContent = document.documentElement.outerHTML;
+                const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'yt-auto-MBkaeX.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                showToast('✅ Download started!', 'success');
+            } catch (error) {
+                showToast('Try Method 2 (Copy Code)', 'error');
+            }
+        }
+
+        function copyFullCode() {
+            const htmlContent = document.documentElement.outerHTML;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(htmlContent).then(() => {
+                    showToast('✅ Code copied! Paste in Notepad and save as .html', 'success');
+                }).catch(() => { fallbackCopy(htmlContent); });
+            } else {
+                fallbackCopy(htmlContent);
+            }
+        }
+
+        function fallbackCopy(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showToast('✅ Code copied! Paste in Notepad and save as .html', 'success');
+            } catch (err) {
+                showToast('Press Ctrl+A then Ctrl+C to copy', 'warning');
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function saveAsFile() {
+            showToast('Press Ctrl+S (Windows) or Cmd+S (Mac) to save', 'info');
+        }
+
+        function copyShareLink() {
+            const linkText = window.location.href;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(linkText).then(() => {
+                    showToast('✅ Link copied!', 'success');
+                }).catch(() => { showToast('Link: ' + linkText, 'info'); });
+            } else {
+                showToast('Link: ' + linkText, 'info');
+            }
+        }
+
+        function exportWorkflow() {
+            const exportData = {
+                ...workflowData,
+                selectedTopic: selectedTopic,
+                settings: {
+                    quality: selectedQuality,
+                    fps: selectedFPS,
+                    duration: document.getElementById('videoDuration')?.value,
+                    voice: document.getElementById('voiceType')?.value,
+                    animation: document.getElementById('animationStyle')?.value
+                },
+                exportedAt: new Date().toISOString()
+            };
+            const dataStr = JSON.stringify(exportData, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'workflow-MBkaeX.json';
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast('✅ Workflow exported!', 'success');
+        }
+
+        function runWithTopic() {
+            if (!selectedTopic) { showToast('Select a topic first!', 'warning'); return; }
+            runNow();
+        }
+
+        function runNow() {
+            if (!selectedTopic) { showToast('Select a topic first!', 'warning'); return; }
+            executionCount++;
+            const totalVideosEl = document.getElementById('totalVideos');
+            if (totalVideosEl) totalVideosEl.textContent = 24 + executionCount;
+            showToast(`Starting: ${selectedTopic.title}`, 'info');
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 16.67;
+                const progressBar = document.getElementById('progressBar');
+                const progressText = document.getElementById('progressText');
+                if (progressBar) progressBar.style.width = progress + '%';
+                if (progressText) progressText.textContent = Math.round(progress) + '%';
+                if (progress >= 100) clearInterval(interval);
+            }, 800);
+            const steps = [
+                { delay: 800, message: 'Script generating...' },
+                { delay: 1600, message: 'Voice creating...' },
+                { delay: 2400, message: 'Video rendering...' },
+                { delay: 3200, message: 'Uploading to YouTube...' },
+                { delay: 4000, message: '✅ Complete!' }
+            ];
+            steps.forEach(step => {
+                setTimeout(() => showToast(step.message, 'success'), step.delay);
+            });
+        }
+
+        function openSettings() {
+            const modal = document.getElementById('settingsModal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeSettings() {
+            const modal = document.getElementById('settingsModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function saveSettings() {
+            const cronInput = document.getElementById('cronInput');
+            const nextRunEl = document.getElementById('nextRun');
+            if (cronInput && nextRunEl) {
+                const cronValue = cronInput.value;
+                nextRunEl.textContent = cronValue.split(' ')[1] + ':00 AM';
+            }
+            closeSettings();
+            showToast('Settings saved!', 'success');
+        }
+
+        const toggleBtn = document.getElementById('toggleWorkflow');
+        if (toggleBtn) {
+            toggleBtn.onclick = function() {
+                isRunning = !isRunning;
+                const indicator = document.getElementById('workflowStatus');
+                const text = document.getElementById('statusText');
+                if (isRunning) {
+                    this.textContent = 'Stop Automation';
+                    if (indicator) indicator.className = 'status-dot status-active';
+                    if (text) text.textContent = 'Active';
+                } else {
+                    this.textContent = 'Start Automation';
+                    if (indicator) indicator.className = 'status-dot status-inactive';
+                    if (text) text.textContent = 'Stopped';
+                }
+            };
+        }
+
+        function showToast(message, type = 'info') {
+            const colors = {
+                success: 'from-green-500 to-emerald-500',
+                error: 'from-red-500 to-rose-500',
+                warning: 'from-yellow-500 to-orange-500',
+                info: 'from-blue-500 to-indigo-500'
+            };
+            document.querySelectorAll('.toast').forEach(t => t.remove());
+            const toast = document.createElement('div');
+            toast.className = `toast fixed bottom-4 right-4 bg-gradient-to-r ${colors[type]} text-white px-6 py-3 rounded-xl shadow-lg z-50 flex items-center gap-3`;
+            toast.innerHTML = `
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span>${message}</span>
+            `;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+
+
+
+
+  
+  </body></html>
